@@ -32,8 +32,8 @@ section.slide > pre {
 - требования к программам
 - отладка
 
-Материалы к занятиям: https://zenderro.github.io/programming-semester-5/
-email: [andrey.zenzinov@gmail.com](mailto:andrey.zenzinov@gmail.com)
+Материалы к занятиям: https://mzanchurin.github.io/programming-semester-5/
+email: [maxim.zanchurin@gmail.com](mailto:maxim.zanchurin@gmail.com)
 
 
 # Стиль написания

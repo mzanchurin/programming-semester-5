@@ -31,8 +31,8 @@ section.slide > pre {
 - умножение квадратных матриц
 - первая задача
 
-Материалы к занятиям: https://zenderro.github.io/programming-semester-5/
-email: [andrey.zenzinov@gmail.com](mailto:andrey.zenzinov@gmail.com)
+Материалы к занятиям: https://mzanchurin.github.io/programming-semester-5/
+email: [maxim.zanchurin@gmail.com](mailto:maxim.zanchurin@gmail.com)
 
 # Числа с плавающей точкой
 Плавающая точка — метод представления подмножества рациональных чисел (бывает тип комплексных чисел с плавающей точкой):

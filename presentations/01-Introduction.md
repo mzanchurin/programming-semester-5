@@ -1,4 +1,4 @@
-# Добрый день, группа 312!
+# Добрый день, группа 311!
 <style type="text/css">
 div.sourceCode {
   font-size: 1.2em;
@@ -28,12 +28,12 @@ section.slide > pre {
 ## Курс «Практикум на ЭВМ» (по численным методам)
 
 ### Осенний семестр. Методы решения линейных систем нахождений собственных значений
-Я — **Андрей Александрович Зензинов**
+Я — **Максим Анатольевич Занчурин**
 
 
-email: [andrey.zenzinov@gmail.com](mailto:andrey.zenzinov@gmail.com)
+email: [maxim.zanchurin@gmail.com](mailto:maxim.zanchurin@gmail.com)
 
-Материалы к занятиям: https://zenderro.github.io/programming-semester-5/
+Материалы к занятиям: https://mzanchurin.github.io/programming-semester-5/
 
 # Дистанционное обучение
 

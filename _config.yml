@@ -5,7 +5,7 @@ description: "
 
 "
 baseurl: "/programming-semester-5/" # the subpath of your site, e.g. /blog/
-url: "https://zenderro.github.io" # the base hostname & protocol for your site
+url: "https://mzanchurin.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username:  zenderro
 
