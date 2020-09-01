@@ -1,4 +1,4 @@
-# Добрый день, группа 312!
+# Добрый день, группа 311!
 <style type="text/css">
 div.sourceCode {
   font-size: 1.2em;
