@@ -307,7 +307,7 @@ ssh-keygen -b 4096 -t rsa
 
 # Тестовое задание
 
-Тестовое задание: https://classroom.github.com/a/J_I5nEOm
+Тестовое задание: https://classroom.github.com/a/YZuQjpQ3
 
 В тестовом задании необходимо вывести на экран фразу `Hello world, it's ` и далее ваше имя и фамилию.
 
