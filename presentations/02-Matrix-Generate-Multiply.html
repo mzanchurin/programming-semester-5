@@ -176,49 +176,6 @@ section.slide > pre {
 </ol>
 <p>Для численных методов задача осложняется: даны значения <span class="math inline"><em>Â</em>, <em>b̂</em></span> с погрешностью, т.к. на практике не все действительные числа могут быть точно представлены в виде чисел с плавающей точкой; арифметические операции тоже вносят погрешность.</p>
 </section>
-<section id="векторные-и-матричные-нормы" class="slide level1">
-<h1>Векторные и матричные нормы</h1>
-<p>Векторная норма ‖·‖ : 𝐕 → $ ℝ_+ $:</p>
-<ol type="1">
-<li>Разделяет точки: ‖x‖ = 0 ⇔ x = 0</li>
-<li>Однородна: λ ∈ ℂ ⇒ ‖λx‖ = |λ|·‖x‖</li>
-<li>Удовлетворяет неравенству треугольника: ‖x + y‖ ⩽ ‖x‖ + ‖y‖</li>
-</ol>
-<p>Матричная норма — п.1–3 и:</p>
-<ol start="4" type="1">
-<li>Удовлетворяет неравенству треугольника по произведению: <span class="math inline">‖<em>A</em><em>B</em>‖ ⩽ ‖<em>A</em>‖ · ‖<em>B</em>‖</span> (получается, что не всякая векторная норма является матричной)</li>
-</ol>
-<p>Свойства:</p>
-<ul>
-<li><span class="math inline">‖<em>I</em>‖ ⩾ 1</span></li>
-<li><span class="math inline">‖<em>A</em><sup> − 1</sup>‖ · ‖<em>A</em>‖ ⩾ 1</span></li>
-</ul>
-</section>
-<section id="подчинённые-матричные-нормы" class="slide level1">
-<h1>Подчинённые матричные нормы</h1>
-<p>Для нормы <span class="math inline">‖ · ‖</span> на ℂ<span class="math inline"><sup><em>n</em></sup></span> определим матричную (<em>подчинённую</em>, <em>индуцированную</em>) норму на 𝐌<span class="math inline"><sub><em>n</em></sub></span> по формуле: <span class="math display">$$ ‖A‖ ≡ \max\limits_{‖x‖=1} ‖Ax‖. $$</span></p>
-<p>Для подчинённой нормы <span class="math inline">‖<em>I</em>‖ = 1</span> и <span class="math inline">‖<em>A</em><em>x</em>‖ ⩽ ‖<em>A</em>‖ · ‖<em>x</em>‖</span></p>
-<p>Основные нормы для этого курса:</p>
-<ol type="1">
-<li>Максимальная столбцовая норма (<span class="math inline"><em>𝐋</em><sup>1</sup></span>): <span class="math inline">$‖A‖_{1} = \max\limits_{1⩽j⩽n} \sum\limits_{i=1}^n |a_{ij}| \qquad ‖x‖_{1} = Σ|x_{i}|$</span></li>
-<li>Максимальная строчная норма (<span class="math inline"><em>𝐋</em><sup>∞</sup></span>): <span class="math inline">$‖A‖_{∞} = \max\limits_i \sum\limits_j |a_{ij}| \qquad ‖x‖_∞ = \max |x_{i}|$</span></li>
-<li>Спектральная норма (<span class="math inline"><em>𝐋</em><sup>2</sup></span>) (<span class="math inline"><em>λ</em></span> — собственное значение): <span class="math display">$$‖A‖_{2} = \max \{\sqrt{λ} \; | \; ∃v : Av = λv\} \qquad ‖x‖_2 = \sqrt{Σx_{i}^2}$$</span></li>
-</ol>
-<p>Спектральная норма в первой задаче не используется.</p>
-</section>
-<section id="вычислительные-ошибки-и-число-обусловленности" class="slide level1">
-<h1>Вычислительные ошибки и число обусловленности</h1>
-<p>Пусть <span class="math inline"><em>x</em></span> — точное решение системы <span class="math inline"><em>A</em><em>x</em> = <em>b</em></span>, а <span class="math inline"><em>x̂</em></span> — приближённое, полученное с помощью численных методов. Назовём <strong>числом обусловленности</strong> (<span class="math inline"><em>κ</em>(<em>A</em>)</span>, cond(<span class="math inline"><em>A</em></span>)): $κ(A) ≡ ‖A‖·‖A^{-1}‖ ; \mbox{(для невырожденных матриц)} $</p>
-<p><strong>Невязка</strong>: <span class="math inline"><em>r</em> ≡ <em>b</em> − <em>A</em><em>x̂</em></span></p>
-<p>Относительная погрешность приближённого решения: $ \dfrac{‖x-\hat{x}‖}{‖x‖} ⩽ κ(A)\dfrac{‖r‖}{‖b‖}. $</p>
-<p>Свойства числа обусловленности:</p>
-<ol type="1">
-<li><span class="math inline"><em>κ</em>(<em>A</em>) ⩾ 1</span></li>
-<li><span class="math inline"><em>κ</em>(<em>A</em>) = <em>κ</em>(<em>A</em><sup> − 1</sup>)</span></li>
-<li><span class="math inline"><em>κ</em>(<em>A</em><em>B</em>) ⩽ <em>κ</em>(<em>A</em>)<em>κ</em>(<em>B</em>)</span></li>
-<li><span class="math inline">$κ(A) ⩾ \left| \dfrac{λ_{max}(A)}{λ_{min}(A)} \right|$</span></li>
-</ol>
-</section>
 <section id="умножение-матриц" class="slide level1">
 <h1>Умножение матриц</h1>
 <p><img data-src="images/Matrix_multiplication_row_column_correspondance.svg" alt="Схема умножения" /></p>
@@ -231,13 +188,6 @@ section.slide > pre {
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    c[i*n+j] = <span class="fl">0.</span>;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    <span class="cf">for</span> (k = <span class="dv">0</span>; k &lt; n; k++) {</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>      c[i*n+j] = a[i*n+k] * b[k*n+j];</span></code></pre></div>
-<p>Блочная реализация (размер блока — порядка <span class="math inline">$\sqrt{\dfrac{L1}{3}}$</span>)</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="cf">for</span> (i = <span class="dv">0</span>; i &lt; n/BLOCK; i++) {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="cf">for</span> (j = <span class="dv">0</span>; j &lt; n/BLOCK; j++) {</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>    zero_block(c, i, j);</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>    <span class="cf">for</span> (k = <span class="dv">0</span>; k &lt; n/BLOCK; k++) {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>      multiply_block(a, b, temp, i, j, k);</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>      put_block(c, temp, i, j);</span></code></pre></div>
 </section>
 <section id="умножение-матриц-современное-состояние-исследований" class="slide level1">
 <h1>Умножение матриц (современное состояние исследований)</h1>
