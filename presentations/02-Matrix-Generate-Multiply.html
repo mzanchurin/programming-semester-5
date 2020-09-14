@@ -189,13 +189,6 @@ section.slide > pre {
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a>    <span class="cf">for</span> (k = <span class="dv">0</span>; k &lt; n; k++) {</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a>      c[i*n+j] = a[i*n+k] * b[k*n+j];</span></code></pre></div>
 </section>
-<section id="умножение-матриц-современное-состояние-исследований" class="slide level1">
-<h1>Умножение матриц (современное состояние исследований)</h1>
-<p>Вычислительная сложность тривиального алгоритма — <span class="math inline"><em>O</em>(<em>n</em><sup>3</sup>)</span> (т.е. если реализация умножения работает 1 с. на матрице размера <span class="math inline">1000 × 1000</span>, то она будет работать 8 с. на матрице размера <span class="math inline">2000 × 2000</span>, 64 с. на матрице размера <span class="math inline">4000 × 4000</span> и т.д.). Развёртывание цикла, блочные оптимизации и т.п. могут только уменьшить константу.</p>
-<p>Минимальный теоретически возможный порядок — <span class="math inline"><em>O</em>(<em>n</em><sup>2</sup>)</span>, т.к. результат зависит от всех <span class="math inline">2<em>n</em><sup>2</sup></span> элементов входных матриц, но вопрос минимальной достижимой сложности на настоящее время не решён.</p>
-<p>Лучший применимый на практике алгоритм — <a href="https://en.wikipedia.org/wiki/Strassen_algorithm">Strassen</a> (1969), сложность — <span class="math inline"><em>O</em>(<em>n</em><sup>2.807355</sup>)</span>, есть проблемы с численной устойчивостью.</p>
-<p>Лучший алгоритм — Coppersmith-Winograd, с последующими улучшениями (2014) сложность — <span class="math inline"><em>O</em>(<em>n</em><sup>2.3728639</sup>)</span>, но константа и производительность используемых операций не позволяет использовать его на практике с ощутимым преимуществом (проблемы с устойчивостью тоже никуда не деваются).</p>
-</section>
 <section id="невязка" class="slide level1">
 <h1>Невязка</h1>
 <p>Невязка (residual) — вектор (матрица) погрешности вычислений. Нас интересует норма невязки.</p>
